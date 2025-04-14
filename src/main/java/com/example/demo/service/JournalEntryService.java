@@ -75,7 +75,7 @@ public class JournalEntryService
         catch (Exception ex)
         {
             log.error("Error : ",ex);
-            throw new RuntimeException("An Error Occurred while deleting the entry",e);
+            throw new RuntimeException("An Error Occurred while deleting the entry",ex);
         }
         return removed;
     }
